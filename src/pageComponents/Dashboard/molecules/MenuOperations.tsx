@@ -51,12 +51,12 @@ export function MenuOperations({ menuId: menuId }: MenuOperationProps) {
           <span className="sr-only">{t("menuOperations.open")}</span>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem>
+{/*           <DropdownMenuItem>
             <Link href={`/edit/${menuId}`} className="flex w-full">
               {t("menuOperations.editMenu")}
             </Link>
           </DropdownMenuItem>
-          <DropdownMenuSeparator />
+          <DropdownMenuSeparator /> */}
           <DropdownMenuItem
             className="flex cursor-pointer items-center text-destructive focus:text-destructive"
             onSelect={() => setShowDeleteAlert(true)}
