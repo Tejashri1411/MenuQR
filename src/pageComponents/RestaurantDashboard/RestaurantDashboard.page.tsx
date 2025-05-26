@@ -164,7 +164,7 @@ export const RestaurantDashboard = ({
             {t("restaurantDashboard.yourQRCode")}
           </p>
           <div className="flex flex-col gap-4">
-            <QRCode size={200} value={`${getBaseUrl()}/menu/${data.slug}`} />
+            <QRCode size={200} value={`https://p1-iota-seven.vercel.app/menu/${data.slug}`} />
             <Button
               onClick={() => router.push(`/menu/manage/${slug}/menu`)}
               className="w-full"
